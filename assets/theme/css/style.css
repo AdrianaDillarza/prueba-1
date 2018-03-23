@@ -1,3 +1,52 @@
+form{
+  font-family: 'Gill Sans Infant Std';
+}
+.modal-body{
+  background-image: url("../assets/images/1.jpg")
+}
+#img1{
+  width:341%;
+}
+
+#inputName{
+  width: 40%;
+  font-family: 'Gill Sans Infant Std';
+}
+#inputLast,
+#apellido{
+  width: 40%;
+  float: right;
+  
+}
+#opciones{
+  margin-top: 7%;
+  width: 139%;
+  font-size: 32px;
+  
+}
+
+#pwd{
+  width: 30%;
+}
+#vali{
+  width: 99%;
+  margin-top: 19%;
+}
+#thanks{
+ font-family: "Trade Gothic LT","Helvetica Neue",Helvetica,Arial,sans-serif;
+ font-size: 44px;
+}
+.modal-header{
+  background-color: #DA291C;
+  color: white;
+  font-family: 'TRADE GOTHIC LT COM';
+  font-size: 20px;
+}
+.panel-heading{
+  margin-left: 3%;
+}
+
+
 /*!
  * Mobirise v4 theme (https://mobirise.com/)
  * Copyright 2017 Mobirise
