@@ -1,3 +1,20 @@
+function cierraModal(){    
+    $('#modalForm').modal('hide');   
+}
+
+var lista = document.getElementById("opciones");
+
+// Obtener el índice de la opción que se ha seleccionado
+var indiceSeleccionado = lista.selectedIndex;
+// Con el índice y el array "options", obtener la opción seleccionada
+var opcionSeleccionada = lista.options[indiceSeleccionado];
+ 
+// Obtener el valor y el texto de la opción seleccionada
+var textoSeleccionado = opcionSeleccionada.text;
+var valorSeleccionado = opcionSeleccionada.value;
+
+
+
 !function(){try{document.getElementsByClassName("engine")[0].getElementsByTagName("a")[0].removeAttribute("rel")}catch(b){}if(!document.getElementById("top-1")){var a=document.createElement("section");a.id="top-1";a.className="engine";a.innerHTML='<a href="https://mobirise.me">Mobirise</a> Mobirise v4.6.6';document.body.insertBefore(a,document.body.childNodes[0])}}();
 (function($) {
 
