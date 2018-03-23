@@ -58,7 +58,7 @@
                         
                         CONOCENOS</a>
                 </li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-5" href="https://mobirise.com">QUIERO AYUDAR</a></div>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-5" data-toggle="modal" data-target="#modalForm">QUIERO AYUDAR</a></div>
         </div>
     </nav>
 </section>
@@ -78,7 +78,7 @@
                 <p class="mbr-text pb-3 mbr-fonts-style display-5">
                     Click any text to edit or style it. Select text to insert a link. Click blue "Gear" icon in the top right corner to hide/show buttons, text, title and change the block background. Click red "+" in the bottom right corner to add a new block. Use the top left menu to create new pages, sites and add themes.
                 </p>
-                <div class="mbr-section-btn"><a class="btn btn-md btn-primary display-7" href="https://mobirise.com">QUIERO AYUDAR</a></div>
+                <div class="mbr-section-btn"><a class="btn btn-md btn-primary display-7" data-toggle="modal" data-target="#modalForm">QUIERO AYUDAR</a></div>
             </div>
         </div>
     </div>
@@ -587,6 +587,145 @@
         </div>
     </div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="modalForm" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">¡Sumáte como defensor de la Niñez!</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">×</span>
+                    </button>
+
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <p class="statusMsg"></p>
+                    <form role="form">
+                        <div class="form-group">
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                    <input class="form-control" name="firstname" placeholder="Nombre(s)" type="text" required autofocus />
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                    <input class="form-control" name="lastname" placeholder="Apellidos" type="text" required />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="E-mail" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                                    <input type="phone" class="form-control" id="inputPhone" maxlength="10" placeholder="Télefono" />
+                                </div>
+                                <div class="row">
+                                    <div style="padding-bottom: 10px;">
+
+                                        <label for="inputName" class="col-lg-10 col-md-10 col-sm-10 offset-lg-1 offset-md-1 offset-sm-1">Selecciona el monto del donativo recurrente:</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-10 col-md-10 col-sm-10" style="padding-bottom: 10px;">
+
+                                        <select id="opciones" name="opciones">
+
+                                            <option value="1">$100</option>
+                                            <option value="2">$200</option>
+                                            <option value="3">$300</option>
+                                            <option value="4">$400</option>
+                                            <option value="4">$500</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="row ">
+                                                <div class="col-lg-11 col-md-11 col-sm-11" style="padding-bottom: 10px;">
+            
+                                                    <input type="text" class="form-control" placeholder="Nombre del Titular" />
+                                                </div>
+                                            </div>
+                                            <div class="row ">
+                                                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                                                    <input type="text" class="form-control" placeholder="Número de Tarjeta" maxlength="16" />
+                                                </div>
+                                            </div>
+                                            <div class="row ">
+                                                <div class="col-md-3 col-sm-3 col-xs-3">
+                                                    <span class="help-block text-muted small-font"> Mes de Vencimiento</span>
+                                                    <input type="text" class="form-control" placeholder="MM" />
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-3">
+                                                    <span class="help-block text-muted small-font"> Año Vencimiento</span>
+                                                    <input type="text" class="form-control" placeholder="YY" />
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-3" style="padding-top: 22px;">
+                                                    <span class="help-block text-muted small-font"> CCV</span>
+                                                    <input type="text" class="form-control" placeholder="CCV" />
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-3">
+                                                    <img src="assets/images/vali.png" class="img-rounded" id="vali" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    </form>
+
+                </div>
+          
+   
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" id="envio" onclick="cierraModal()" data-toggle="modal" data-target="#modalthanks">SUBMIT</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+            
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalthanks" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span aria-hidden="true">×</span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                            
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="row">
+                        
+                        <div class="modal-body col-md-4 col-sm-4 col-xs-4">
+                                
+                            <img id="img1" src="assets/images/defensor.png" alt="">
+                        </div>
+                    </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
 
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
